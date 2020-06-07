@@ -3,7 +3,7 @@
 Scope
 
   * Pull currency rate from bnm website (bnm website will return xml file)
-  * Pharse XML file using 
+  * Pharse XML file using SweetXml
   * Distribute update to other nodes using pubsub architecture
   
 
