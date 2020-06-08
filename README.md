@@ -34,8 +34,8 @@ To start your Phoenix server:
   * iex(node2@localhost)4> Bnm.Bnm_app.get_latest
 
 # future update
-  * create website ui using vue.js
-  * website subscribe to bnm channel
+  * create website ui using vue.js - DONE
+  * website subscribe to bnm channel - DONE
   * create master node, distribute to local nodes
   * create Dockerfile
 
