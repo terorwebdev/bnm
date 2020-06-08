@@ -36,6 +36,6 @@ To start your Phoenix server:
 # future update
   * create website ui using vue.js
   * website subscribe to bnm channel
-  * create master node, distribute to local nodes
+  * create master node, distributing to local nodes
   * create Dockerfile
 
