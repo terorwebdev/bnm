@@ -1,20 +1,20 @@
 # Bnm - Bank Negara Malaysia currency rate 
 
-Scope
+## Scope
 
   * Build app using Phoenix
   * Pull currency rate from bnm website (bnm website will return xml file)
-  * Pharse XML file using SweetXml
+  * Parsering XML file using SweetXml
   * Distribute update to other nodes using pubsub architecture
   
 
-To start your Phoenix server:
+## To start your Phoenix server:
 
   * Install dependencies with `mix deps.get`
   * Create and migrate your database with `mix ecto.setup`
   * Install Node.js dependencies with `cd assets && npm install`
 
-## set up distributed environment
+ set up distributed environment
 
   * Required two or more terminals to test distributed 
   * Open first terminal
