@@ -1,6 +1,7 @@
 defmodule Bnm.Bnm_pubsub do
     use GenServer
     alias Phoenix.PubSub
+    alias Bnm.Bnm_app
     require Logger
     @pubsub_name Bnm.PubSub
     @pubsub_topic "bnm_updates"
@@ -26,6 +27,9 @@ defmodule Bnm.Bnm_pubsub do
     def handle_info({:set_update, updates}, state) do
       Logger.info("Update received at: #{inspect(NaiveDateTime.utc_now)}")
       #Logger.info("Update received: #{inspect(updates)}")
+
+      # publish to client
+      Bnm_app.update_client(updates)
   
       {:noreply, updates}
     end

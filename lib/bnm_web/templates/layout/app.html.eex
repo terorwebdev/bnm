@@ -1,30 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Bnm · Phoenix Framework</title>
-    <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.css") %>"/>
-  </head>
-  <body>
-    <header>
-      <section class="container">
-        <nav role="navigation">
-          <ul>
-            <li><a href="https://hexdocs.pm/phoenix/overview.html">Get Started</a></li>
-          </ul>
-        </nav>
-        <a href="http://phoenixframework.org/" class="phx-logo">
-          <img src="<%= Routes.static_path(@conn, "/images/phoenix.png") %>" alt="Phoenix Framework Logo"/>
-        </a>
-      </section>
-    </header>
-    <main role="main" class="container">
-      <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
-      <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
-      <%= render @view_module, @view_template, assigns %>
-    </main>
-    <script type="text/javascript" src="<%= Routes.static_path(@conn, "/js/app.js") %>"></script>
-  </body>
+<html lang=en>
+
+<head>
+    <meta charset=utf-8>
+    <meta http-equiv=X-UA-Compatible content="IE=edge">
+    <meta name=viewport content="width=device-width,initial-scale=1">
+    <link rel=icon href="<%= Routes.static_path(@conn, "/favicon.ico") %>">
+    <title>bnm_app</title>
+    <link href="<%= Routes.static_path(@conn, "/css/app.9684c5bf.css") %>" rel=preload as=style>
+    <link href="<%= Routes.static_path(@conn, "/css/chunk-vendors.496dd37e.css") %>" rel=preload as=style>
+    <link href="<%= Routes.static_path(@conn, "/js/app.f5ecd76d.js") %>" rel=preload as=script>
+    <link href="<%= Routes.static_path(@conn, "/js/chunk-vendors.56856553.js") %>" rel=preload as=script>
+    <link href="<%= Routes.static_path(@conn, "/css/chunk-vendors.496dd37e.css") %>" rel=stylesheet>
+    <link href="<%= Routes.static_path(@conn, "/css/app.9684c5bf.css") %>" rel=stylesheet>
+</head>
+
+<body><noscript><strong>We're sorry but bnm_app doesn't work properly without JavaScript enabled. Please enable it to
+            continue.</strong></noscript>
+    <div id=app></div>
+    <script src="<%= Routes.static_path(@conn, "/js/chunk-vendors.56856553.js") %>"></script>
+    <script src="<%= Routes.static_path(@conn, "/js/app.f5ecd76d.js") %>"></script>
+</body>
+
 </html>
+
+
+
+
+
+
+
+
+
