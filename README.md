@@ -31,11 +31,11 @@
 
 ### OK, lets test
   * At first terminal, fire this command
-  * iex(node1@localhost)> Bnm.Bnm_app.update
+  * iex(master@localhost)> Bnm.Bnm_app.update
   * You can see [info] Update received at: ~~~~~~~~
   * And at second terminal you will see the same info
   * To get the latest update, fire this command -> either at first terminal or others
-  * iex(node2@localhost)4> Bnm.Bnm_app.get_latest
+  * iex(local@localhost)4> Bnm.Bnm_app.get_latest
 
 ### future update
   * create website ui using vue.js - DONE
