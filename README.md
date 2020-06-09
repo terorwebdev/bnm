@@ -24,6 +24,9 @@
   * $PORT=4001 iex --sname node2@localhost -S mix phx.server
   * iex(node2@localhost) > Node.connect(:node1@localhost)
   * The command will return true, mean its connected to the first node
+  
+## Architecture
+ * <img width="468" alt="bnm_architecture" src="https://user-images.githubusercontent.com/46864338/84110384-5d27fd80-aa57-11ea-8686-9543a086ea22.png">
 
 ### OK, lets test
   * At first terminal, fire this command
