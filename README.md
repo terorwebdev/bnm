@@ -18,15 +18,16 @@
 
   * Required two or more terminals to test distributed 
   * Open first terminal
-  * $PORT=4000 iex --sname node1@localhost -S mix phx.server
+  * $PORT=4001 iex --sname master@localhost -S mix phx.server
   * by default, if you dont set port, it will use port 4000, since we need two server running, setup other server iat other terminal using different port
   * Open second terminal
-  * $PORT=4001 iex --sname node2@localhost -S mix phx.server
-  * iex(node2@localhost) > Node.connect(:node1@localhost)
+  * $PORT=4000 iex --sname local@localhost -S mix phx.server
+  * iex(node2@localhost) > Node.connect(:master@localhost)
   * The command will return true, mean its connected to the first node
+  * open browser go to this url http://localhost:4000/
   
 ## Architecture
- * <img width="468" alt="bnm_architecture" src="https://user-images.githubusercontent.com/46864338/84110384-5d27fd80-aa57-11ea-8686-9543a086ea22.png">
+ <img width="468" alt="bnm_architecture" src="https://user-images.githubusercontent.com/46864338/84110384-5d27fd80-aa57-11ea-8686-9543a086ea22.png">
 
 ### OK, lets test
   * At first terminal, fire this command
@@ -36,7 +37,7 @@
   * To get the latest update, fire this command -> either at first terminal or others
   * iex(node2@localhost)4> Bnm.Bnm_app.get_latest
 
-# future update
+### future update
   * create website ui using vue.js - DONE
   * website subscribe to bnm channel - DONE
   * create master node, distribute to local nodes
