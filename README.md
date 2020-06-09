@@ -3,9 +3,10 @@
 ## Scope
 
   * Build app using Phoenix
-  * Pull currency rate from bnm website (bnm website will return xml file)
+  * Master node pull currency rate from bnm website (bnm website will return xml file)
   * Parsering XML file using SweetXml
-  * Distribute update to other nodes using pubsub architecture
+  * master distribute update to other nodes using pubsub architecture
+  * local node broadcast update to client's subscribed to a channel
   
 
 ## To start your Phoenix server:
